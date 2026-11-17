@@ -1,0 +1,43 @@
+
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+}
+
+/* Element Selector */
+body {
+    background-color: #f0f4f8;
+    font-family: Arial, sans-serif;
+}
+
+/* Element Selector */
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+/* Class Selector */
+.box {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ID Selector */
+#special {
+    color: darkred;
+    text-align: center;
+}
+
+/* Element Selector */
+p {
+    color: #444;
+    font-size: 18px;
+}
+
+/* Element Selector */
+button {
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+}

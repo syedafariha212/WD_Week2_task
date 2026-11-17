@@ -1,0 +1,39 @@
+
+body {
+    background-color: #f0f4f8;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: darkblue;
+}
+
+.container {
+    width: 70%;
+    height: 180px;
+    margin: 30px auto;
+    padding: 25px;
+    border: 3px solid darkblue;
+    border-radius: 12px;
+    background-color: lightblue;
+    box-shadow: 3px 3px 10px gray;
+}
+
+.card {
+    width: 50%;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 8px lightgray;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}

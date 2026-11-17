@@ -1,0 +1,233 @@
+
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #202044;
+    padding: 18px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #b8a5ff;
+    font-size: 28px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #b8a5ff;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #202044, #6554a5);
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 17px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #b8a5ff;
+    color: #202044;
+    padding: 12px 25px;
+    margin-top: 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+/* Common Sections */
+.section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    color: #51418f;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+/* Categories - Flexbox */
+.category-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.category-card {
+    background-color: white;
+    width: 280px;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #ddd;
+}
+
+.category-card h3 {
+    color: #51418f;
+    margin-bottom: 12px;
+}
+
+/* Courses - CSS Grid */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.course-card {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    border: 1px solid #e5e0f5;
+    box-shadow: 0 4px 12px #ddd;
+    transition: transform 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-icon {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.course-card h3 {
+    color: #51418f;
+    margin-bottom: 12px;
+}
+
+.course-card p {
+    margin-bottom: 15px;
+}
+
+.course-card span {
+    display: inline-block;
+    color: #6554a5;
+    background-color: #eee9ff;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #eae6ff;
+}
+
+/* Footer */
+footer {
+    background-color: #202044;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Tablet Responsive Design */
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .section {
+        padding: 45px 5%;
+    }
+}
+
+/* Mobile Responsive Design */
+@media screen and (max-width: 480px) {
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .category-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-card {
+        width: 100%;
+    }
+
+    .section h2 {
+        font-size: 24px;
+    }
+}
